@@ -26,6 +26,14 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+ 
+  <distributionManagement>
+    <repository>
+      <id>nexus</id>
+      <name>admin</name>
+      <url>http://104.198.130.184:8081/#admin/repository</url>
+    </repository>
+  </distributionManagement>
 
   <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
