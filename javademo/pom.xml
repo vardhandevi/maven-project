@@ -33,11 +33,11 @@
       <name>central</name>
       <url>http://104.154.171.82/repository/maven-central/</url>
     </repository>
-    <repository>    
+    <snapshotRepository>    
       <id>maven-snapshots</id>
       <name>maven-snapshots</name>
       <url>http://104.154.171.82/repository/maven-snapshots/</url>
-    </repository>
+    </snapshotRepository>
   </distributionManagement>
 
   <build>
