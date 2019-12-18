@@ -29,8 +29,8 @@
  
   <distributionManagement>
     <repository>
-      <id>nexus</id>
-      <name>admin</name>
+      <id>sdGroupRepo</id>
+      <name>central</name>
       <url>http://104.154.171.82/repository/maven-central/</url>
     </repository>
   </distributionManagement>

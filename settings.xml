@@ -1,54 +1,26 @@
-<settings xmylns="http://maven.apache.org/SETTINGS/1.0.0"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0                                                           http://maven.apache.org/xsd/settings-1.0.0.xsd">
-
-    <servers>
-    	<server>
-            <id>nexus-releases</id>
-            <username>admin</username>
-            <password>admin123</password>
-        </server>
-    </servers>
-
-    <activeProfiles>
-        <!--make the profile active all the time -->
-        <activeProfile>nexus</activeProfile>
-    </activeProfiles>
-
-    <profiles>
-        <profile>
-            <id>nexus</id>
-          <repositories>
-          <repository>
-          <id>central</id>
-          <url>http://maven.apache.org</url>
-          <releases><enabled>true</enabled></releases>
-          <snapshots><enabled>true</enabled></snapshots>
-          </repository>
-            </repositories>
-
-            <pluginRepositories>
-                <pluginRepository>
-                    <id>central</id>
-                    <url>http://maven.apache.org</url>
-                    <releases><enabled>true</enabled></releases>
-                    <snapshots><enabled>true</enabled></snapshots>
-                </pluginRepository>
-            </pluginRepositories>
-        </profile>
-    </profiles>
-
-    <servers>
-      <server>
-       <id>releases</id>
-       <username>deployment</username>
-       <password>deployment123</password>
-      </server>
-      <server>
-        <id>snapshots</id>
-        <username>deployment</username>
-        <password>deployment123</password>
-      </server>
-    </servers>
-
-</settings> 
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+  
+  <servers>
+    <server>
+      <id>sdSnapRepo</id>
+      <username>admin</username>
+      <password>admin123</password>
+    </server>
+    <server>
+      <id>sdreleaseRepo</id>
+      <username>admin</username>
+      <password>admin123</password>
+    </server>
+  </servers>
+  <mirrors>
+    <mirror>
+      <id>sdGroupRepo</id>
+      <name>central</name>
+      <url>http://104.154.171.82/repository/maven-central/</url>
+      <mirrorOf>*</mirrorOf>
+    </mirror>
+  </mirrors>
+</settings>
