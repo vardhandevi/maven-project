@@ -31,7 +31,7 @@
     <repository>
       <id>nexus</id>
       <name>admin</name>
-      <url>http://104.198.130.184:8081/#admin/repository</url>
+      <url>http://104.154.171.82/repository/maven-central/</url>
     </repository>
   </distributionManagement>
 
