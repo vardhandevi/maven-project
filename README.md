@@ -1,2 +1,2 @@
 # maven-project
-maven project -testing webhooks
+maven project -testing webhooks-secret key
