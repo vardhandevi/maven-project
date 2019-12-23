@@ -1,2 +1,2 @@
 # maven-project
-maven project -testing webhook
+maven project -testing webhooks
